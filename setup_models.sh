@@ -26,6 +26,7 @@ mkdir -p ${COMFYUI_DIR}/models/loras \
          ${COMFYUI_DIR}/models/diffusion_models \
          ${COMFYUI_DIR}/models/text_encoders \
          ${COMFYUI_DIR}/models/upscale_models \
+         ${COMFYUI_DIR}/models/SEEDVR2 \
          ${COMFYUI_DIR}/models/vae \
          ${COMFYUI_DIR}/models/ultralytics/bbox \
          ${COMFYUI_DIR}/models/ultralytics/segm \
@@ -239,9 +240,18 @@ echo "[ SAM3 ]"
 cd ${COMFYUI_DIR}/models/sams
 download_if_missing "https://huggingface.co/datasets/Gourieff/ReActor/resolve/main/models/sams/sam_vit_b_01ec64.pth" \
     "sam_vit_b_01ec64.pth" "$HF_TOKEN"
-
 download_if_missing "https://huggingface.co/HCMUE-Research/SAM-vit-h/resolve/main/sam_vit_h_4b8939.pth" \
     "sam_vit_h_4b8939.pth" "$HF_TOKEN"
+
+
+    # ── SEEDVR2 (Upscale Models) ──────────────────────────────────────────
+echo "[ Starting download SEEDV2 ]"
+cd ${COMFYUI_DIR}/models/SEEDVR2
+download_if_missing "https://huggingface.co/numz/SeedVR2_comfyUI/resolve/main/seedvr2_ema_7b_sharp_fp16.safetensors" \
+    "seedvr2_ema_7b_sharp_fp16.safetensors" "$HF_TOKEN"
+
+
+
 
 ) &
 
