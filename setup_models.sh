@@ -98,7 +98,6 @@ download_if_missing "https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main
     "z_image_turbo_bf16.safetensors" "$HF_TOKEN"
 
 cd ${COMFYUI_DIR}/models/diffusion_models 
-rm /workspace/ComfyUI/models/diffusion_models/flux-2-klein-9b-fp8.safetensors
 download_if_missing "https://huggingface.co/black-forest-labs/FLUX.2-klein-9b-fp8/resolve/main/flux-2-klein-9b-fp8.safetensors" \
     "flux-2-klein-9b-fp8.safetensors" "$HF_TOKEN"
 
