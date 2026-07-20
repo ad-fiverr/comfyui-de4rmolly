@@ -112,6 +112,10 @@ download_if_missing "https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main
     "qwen_3_4b.safetensors" "$HF_TOKEN"
 download_if_missing "https://huggingface.co/AlperKTS/Krea2_FP8/resolve/main/qwen3vl_4b_fp8_scaled.safetensors" \
     "qwen3vl_4b_fp8_scaled.safetensors" "$HF_TOKEN"
+download_if_missing "https://huggingface.co/unsloth/Qwen3-4B-GGUF/resolve/main/Qwen3-4B-UD-Q8_K_XL.gguf" \
+    "Qwen3-4B-UD-Q8_K_XL.gguf" "$HF_TOKEN"
+download_if_missing "https://huggingface.co/Comfy-Org/vae-text-encorder-for-flux-klein-9b/resolve/main/split_files/text_encoders/qwen_3_8b.safetensors" \
+    "qwen_3_8b.safetensors" "$HF_TOKEN"
 
 
 # ------------------------------ LORAS ---
