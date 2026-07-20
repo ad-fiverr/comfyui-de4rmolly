@@ -243,6 +243,13 @@ download_if_missing "https://huggingface.co/HCMUE-Research/SAM-vit-h/resolve/mai
 
 ) &
 
+
+cd ${COMFYUI_DIR}
+# 2. Escribir los permisos de los modelos en la lista blanca
+echo "4x-UltraSharpV2.safetensors" >> /workspace/ComfyUI/user/default/ComfyUI-Impact-Subpack/model-whitelist.txt
+echo "4xFFHQDAT.pth" >> /workspace/ComfyUI/user/default/ComfyUI-Impact-Subpack/model-whitelist.txt
+echo "4x_foolhardy_Remacri.pth" >> /workspace/ComfyUI/user/default/ComfyUI-Impact-Subpack/model-whitelist.txt
+echo "BROKEN_NCNN/4x-ClearRealityV1-fp16.bin" >> /workspace/ComfyUI/user/default/ComfyUI-Impact-Subpack/model-whitelist.txt
 # ── Lanzar ComfyUI ────────────────────────────────────────────────────────────
 echo ""
 echo "================================================"
