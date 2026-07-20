@@ -10,7 +10,7 @@ RUN apt-get update -qq && apt-get install -y -qq git wget && \
 
 # Custom Nodes en /ComfyUI (se copian al workspace en el primer arranque)
 RUN cd /ComfyUI/custom_nodes && \
-    rm -rf rgthree-comfy ComfyUI-Impact-Pack ComfyUI_essentials ComfyUI-GGUF ComfyUI-Impact-Subpack cg-use-everywhere ComfyMath ComfyUI-mxToolkit comfyui-crystools ComfyUI_LayerStyle ComfyUI_Fill-Nodes ComfyUI-Image-Saver ComfyUI-AdvancedLivePortrait ComfyUI-WanVideoWrapper && \
+    rm -rf rgthree-comfy ComfyUI-Impact-Pack ComfyUI_essentials ComfyUI-GGUF ComfyUI-Impact-Subpack cg-use-everywhere ComfyMath ComfyUI-mxToolkit comfyui-crystools ComfyUI_LayerStyle ComfyUI_Fill-Nodes ComfyUI-Image-Saver ComfyUI-AdvancedLivePortrait ComfyUI-WanVideoWrapper ComfyUI-Login ComfyUI-login && \
     git clone --depth=1 https://github.com/rgthree/rgthree-comfy && \
     git clone --depth=1 https://github.com/ltdrdata/ComfyUI-Impact-Pack && \
     git clone --depth=1 https://github.com/cubiq/ComfyUI_essentials && \
@@ -35,7 +35,7 @@ RUN for dir in rgthree-comfy ComfyUI-Impact-Pack ComfyUI_essentials ComfyUI-GGUF
 
 
 
-RUN rm -rf /ComfyUI/ComfyUI-Login /ComfyUI/ComfyUI-login
+RUN rm -rf /ComfyUI/custom_nodes/ComfyUI-Login /ComfyUI/custom_nodes/ComfyUI-login
 
 
 RUN mkdir -p /ComfyUI/user/default/workflows
@@ -46,7 +46,7 @@ COPY SeedVR2_HD_Image_upscale.json /ComfyUI/user/default/workflows/zimage-upscal
 
 
 
-RUN apt-get update -qq && apt-get install -y -qq git wget dos2unix && \
+RUN apt-get update -qq && apt-get install -y -qq git wget dos2unix aria2 megatools && \
     pip install -q gdown huggingface_hub comfyui-manager && \
     rm -rf /var/lib/apt/lists/*
 

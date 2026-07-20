@@ -38,12 +38,23 @@ mkdir -p ${COMFYUI_DIR}/models/loras \
 
 download_if_missing() {
     local url="$1" dest="$2" auth="$3"
+    
+    # Si el archivo ya existe y tiene contenido, salta la descarga
     if [ -f "$dest" ] && [ -s "$dest" ]; then return 0; fi
+    
     echo "  Descargando: $(basename $dest)"
+    
+    # aria2c maneja mejor los nombres de archivo si separamos la ruta del nombre
+    local dest_dir=$(dirname "$dest")
+    local file_name=$(basename "$dest")
+    
+    # Crea el directorio si no existe (por seguridad)
+    mkdir -p "$dest_dir"
+    
     if [ -n "$auth" ]; then
-        wget -q --show-progress --header="Authorization: Bearer $auth" -O "$dest" "$url"
+        aria2c --header="Authorization: Bearer $auth" -x 4 -s 4 -c -d "$dest_dir" -o "$file_name" "$url"
     else
-        wget -q --show-progress -O "$dest" "$url"
+        aria2c -x 4 -s 4 -c -d "$dest_dir" -o "$file_name" "$url"
     fi
 }
 
@@ -114,15 +125,15 @@ echo "START DOWNLOAD LORAS..."
 
 # ── Z IMAGE DE4RMOLLY LORA FILE ──
 download_if_missing "https://huggingface.co/exjadev/de4rmolly-zimage-v001/resolve/main/de4rmolly_v01/de4rmolly_v01_000001500.safetensors"  \
-    "de4rmolly_v01/de4rmolly_v01_000001500.safetensors"
+    "de4rmolly_v01/de4rmolly_v01_000001500.safetensors" "$HF_TOKEN"
 download_if_missing "https://huggingface.co/exjadev/de4rmolly-zimage-v001/resolve/main/de4rmolly_v01/de4rmolly_v01_000002550.safetensors"  \
-    "de4rmolly_v01/de4rmolly_v01_000002550.safetensors"
+    "de4rmolly_v01/de4rmolly_v01_000002550.safetensors" "$HF_TOKEN"
 
 # ── Krea 2 DE4RMOLLY LORA FILE ──
 download_if_missing "https://huggingface.co/exjadev/de4rmolly-krea-v001/resolve/main/de4rmolly_krea_v002/de4rmolly_krea_v002_000001500.safetensors" \
-    "de4rmolly_krea_v002_000001500.safetensors"
+    "de4rmolly_krea_v002_000001500.safetensors" "$HF_TOKEN"
 download_if_missing "https://huggingface.co/exjadev/de4rmolly-krea-v001/resolve/main/de4rmolly_krea_v002/de4rmolly_krea_v002_000002100.safetensors" \
-    "de4rmolly_krea_v002/de4rmolly_krea_v002_000002100.safetensors"
+    "de4rmolly_krea_v002/de4rmolly_krea_v002_000002100.safetensors" "$HF_TOKEN"
 
 
 # Civitai filters & loras
@@ -138,11 +149,11 @@ download_if_missing "https://civitai.red/api/download/models/3113304?type=Model&
 echo "[ VAE ]"
 cd ${COMFYUI_DIR}/models/vae && rm -rf split_files/
 download_if_missing "https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/vae/ae.safetensors" \
-    "ae.safetensors"
+    "ae.safetensors" "$HF_TOKEN"
 download_if_missing "https://huggingface.co/Comfy-Org/flux2-dev/resolve/main/split_files/vae/flux2-vae.safetensors" \
-    "flux2-vae.safetensors"
+    "flux2-vae.safetensors" "$HF_TOKEN"
 download_if_missing "https://huggingface.co/Kijai/WanVideo_comfy/resolve/main/Wan2_1_VAE_bf16.safetensors" \
-    "Wan2_1_VAE_bf16.safetensors"
+    "Wan2_1_VAE_bf16.safetensors" "$HF_TOKEN"
 
 
 
@@ -171,21 +182,21 @@ echo ""
 echo "[ BBOX Ultralytics ]"
 cd ${COMFYUI_DIR}/models/ultralytics/bbox && rm -rf split_files/
 download_if_missing "https://huggingface.co/Bingsu/adetailer/resolve/main/face_yolov8m.pt" \
-    "face_yolov8m.pt"
+    "face_yolov8m.pt" "$HF_TOKEN"
 download_if_missing "https://huggingface.co/ashllay/YOLO_Models/resolve/main/bbox/female_breast-v4.2.pt" \
-    "female_breast-v4.2.pt"
+    "female_breast-v4.2.pt" "$HF_TOKEN"
 download_if_missing "https://huggingface.co/ashllay/YOLO_Models/resolve/main/bbox/vagina-v3.2.pt" \
-    "vagina-v3.2.pt"
+    "vagina-v3.2.pt" "$HF_TOKEN"
 download_if_missing "https://huggingface.co/ashllay/YOLO_Models/resolve/main/bbox/full_eyes_detect_v1.pt" \
-    "full_eyes_detect_v1.pt"
+    "full_eyes_detect_v1.pt" "$HF_TOKEN"
 download_if_missing "https://huggingface.co/xingren23/comfyflow-models/resolve/976de8449674de379b02c144d0b3cfa2b61482f2/ultralytics/bbox/hand_yolov8s.pt" \
-    "hand_yolov8s.pt"
+    "hand_yolov8s.pt" "$HF_TOKEN"
 
 
 echo "[-----------  Downloading BBOX Ultralytics SEGM -----------  ]"
 cd ${COMFYUI_DIR}/models/ultralytics/segm
 download_if_missing "https://huggingface.co/Bingsu/adetailer/resolve/main/person_yolov8m-seg.pt" \
-    "person_yolov8m-seg.pt"
+    "person_yolov8m-seg.pt" "$HF_TOKEN"
 
 
 # ── Upscaler Models ──────────────────────────────────────────────────────────
@@ -193,7 +204,7 @@ echo ""
 echo "[ -----------  Downloading Upscaler Models  ----------- ]"
 cd ${COMFYUI_DIR}/models/upscale_models && rm -rf split_files/
 download_if_missing "https://huggingface.co/FacehugmanIII/4x_foolhardy_Remacri/resolve/main/4x_foolhardy_Remacri.pth" \
-    "4x_foolhardy_Remacri.pth"
+    "4x_foolhardy_Remacri.pth" "$HF_TOKEN"
 
 download_gdown_if_missing "1N3ysO2IWkouzy4aFONLgYUjaUMrLz8AB" "4xFFHQDAT.pth"
 
@@ -208,10 +219,10 @@ download_if_missing "https://huggingface.co/facebook/sam3/resolve/main/sam3.pt" 
 echo "[ SAM3 ]"
 cd ${COMFYUI_DIR}/models/sams
 download_if_missing "https://huggingface.co/datasets/Gourieff/ReActor/resolve/main/models/sams/sam_vit_b_01ec64.pth" \
-    "sam_vit_b_01ec64.pth" 
+    "sam_vit_b_01ec64.pth" "$HF_TOKEN"
 
 download_if_missing "https://huggingface.co/HCMUE-Research/SAM-vit-h/resolve/main/sam_vit_h_4b8939.pth" \
-    "sam_vit_h_4b8939.pth" 
+    "sam_vit_h_4b8939.pth" "$HF_TOKEN"
 
 ) &
 
