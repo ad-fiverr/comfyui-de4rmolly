@@ -40,7 +40,7 @@ RUN rm -rf /ComfyUI/ComfyUI-Login /ComfyUI/ComfyUI-login
 
 RUN mkdir -p /ComfyUI/user/default/workflows
 COPY dearmolly_SFW Workflow_for_Instagram.json /ComfyUI/user/default/workflows/zimage-sfw-workflow.json
-COPY krea2_de4rmolly-workflow /ComfyUI/user/default/workflows/Krea-nsfw-workflow.json
+COPY krea2_de4rmolly-workflow.json /ComfyUI/user/default/workflows/Krea-nsfw-workflow.json
 COPY SkinRefiner.json /ComfyUI/user/default/workflows/zimage-refiner-workflow.json
 COPY SeedVR2_HD_Image_upscale.json /ComfyUI/user/default/workflows/zimage-upscaler-workflow.json
 
