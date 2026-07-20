@@ -26,7 +26,6 @@ mkdir -p ${COMFYUI_DIR}/models/loras \
          ${COMFYUI_DIR}/models/diffusion_models \
          ${COMFYUI_DIR}/models/text_encoders \
          ${COMFYUI_DIR}/models/upscale_models \
-         ${COMFYUI_DIR}/models/upscale_models/BROKEN_NCNN \
          ${COMFYUI_DIR}/models/vae \
          ${COMFYUI_DIR}/models/ultralytics/bbox \
          ${COMFYUI_DIR}/models/ultralytics/segm \
@@ -220,9 +219,9 @@ download_if_missing "https://huggingface.co/Kim2091/UltraSharpV2/resolve/main/4x
 download_gdown_if_missing "1N3ysO2IWkouzy4aFONLgYUjaUMrLz8AB" "4xFFHQDAT.pth"
 
 echo "[ -----------  Creating BROKEN_NCNN  ----------- ]"
-cd ${COMFYUI_DIR}/models/upscale_models/BROKEN_NCNN
-download_if_missing "https://huggingface.co/Kim2091/ClearRealityV1/resolve/main/NCNN/4x-ClearRealityV1-fp16.bin" \
-    "4x-ClearRealityV1-fp16.bin" "$HF_TOKEN"
+cd ${COMFYUI_DIR}/models/upscale_models/
+megadl 'https://mega.nz/folder/Xc4wnC7T#yUS5-9-AbRxLhpdPW_8f2w'
+
 
 
 # --- SAM3 ---
@@ -250,6 +249,7 @@ echo "4x-UltraSharpV2.safetensors" >> /workspace/ComfyUI/user/default/ComfyUI-Im
 echo "4xFFHQDAT.pth" >> /workspace/ComfyUI/user/default/ComfyUI-Impact-Subpack/model-whitelist.txt
 echo "4x_foolhardy_Remacri.pth" >> /workspace/ComfyUI/user/default/ComfyUI-Impact-Subpack/model-whitelist.txt
 echo "BROKEN_NCNN/4x-ClearRealityV1-fp16.bin" >> /workspace/ComfyUI/user/default/ComfyUI-Impact-Subpack/model-whitelist.txt
+echo "4x-ClearRealityV1.pth" >> /workspace/ComfyUI/user/default/ComfyUI-Impact-Subpack/model-whitelist.txt
 
 # Autorización para el modelo SwinIR
 echo "003_realSR_BSRGAN_DFOWMFC_s64w8_SwinIR-L_x4_GAN.pth" >> /workspace/ComfyUI/user/default/ComfyUI-Impact-Subpack/model-whitelist.txt
