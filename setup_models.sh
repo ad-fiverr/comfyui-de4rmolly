@@ -26,12 +26,13 @@ mkdir -p ${COMFYUI_DIR}/models/loras \
          ${COMFYUI_DIR}/models/diffusion_models \
          ${COMFYUI_DIR}/models/text_encoders \
          ${COMFYUI_DIR}/models/upscale_models \
+         ${COMFYUI_DIR}/models/upscale_models/BROKEN_NCNN \
          ${COMFYUI_DIR}/models/vae \
          ${COMFYUI_DIR}/models/ultralytics/bbox \
          ${COMFYUI_DIR}/models/ultralytics/segm \
-         ${COMFYUI_DIR}/models/loras/
+         ${COMFYUI_DIR}/models/loras/ \
          ${COMFYUI_DIR}/models/sams \
-         ${COMFYUI_DIR}/models/sam3 
+         ${COMFYUI_DIR}/models/sam3  
          
 
 # ── Funciones de descarga ─────────────────────────────────────────────────────
@@ -197,16 +198,32 @@ echo "[-----------  Downloading BBOX Ultralytics SEGM -----------  ]"
 cd ${COMFYUI_DIR}/models/ultralytics/segm
 download_if_missing "https://huggingface.co/Bingsu/adetailer/resolve/main/person_yolov8m-seg.pt" \
     "person_yolov8m-seg.pt" "$HF_TOKEN"
+download_if_missing "https://huggingface.co/24xx/segm/resolve/main/deepfashion2_yolov8s-seg.pt" \
+    "deepfashion2_yolov8s-seg.pt" "$HF_TOKEN"
+download_if_missing "https://huggingface.co/24xx/segm/resolve/main/hair_yolov8n-seg_60.pt" \
+    "hair_yolov8n-seg_60.pt" "$HF_TOKEN"
+download_if_missing "https://huggingface.co/24xx/segm/resolve/main/skin_yolov8n-seg_800.pt" \
+    "skin_yolov8n-seg_800.pt" "$HF_TOKEN"
+
 
 
 # ── Upscaler Models ──────────────────────────────────────────────────────────
 echo ""
-echo "[ -----------  Downloading Upscaler Models  ----------- ]"
+echo "[ -----------  Downloading UUpscaling  Models  ----------- ]"
 cd ${COMFYUI_DIR}/models/upscale_models && rm -rf split_files/
 download_if_missing "https://huggingface.co/FacehugmanIII/4x_foolhardy_Remacri/resolve/main/4x_foolhardy_Remacri.pth" \
     "4x_foolhardy_Remacri.pth" "$HF_TOKEN"
+download_if_missing "https://huggingface.co/Kim2091/UltraSharpV2/resolve/main/4x-UltraSharpV2.safetensors" \
+    "4x-UltraSharpV2.safetensors" "$HF_TOKEN"
+
 
 download_gdown_if_missing "1N3ysO2IWkouzy4aFONLgYUjaUMrLz8AB" "4xFFHQDAT.pth"
+
+echo "[ -----------  Creating BROKEN_NCNN  ----------- ]"
+cd ${COMFYUI_DIR}/models/upscale_models/BROKEN_NCNN
+download_if_missing "https://huggingface.co/Kim2091/ClearRealityV1/resolve/main/NCNN/4x-ClearRealityV1-fp16.bin" \
+    "4x-ClearRealityV1-fp16.bin" "$HF_TOKEN"
+
 
 # --- SAM3 ---
 echo "[ ----------- Downloading SAM3 -----------  ]"
