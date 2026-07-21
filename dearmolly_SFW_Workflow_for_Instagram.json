@@ -8,14 +8,16 @@
       "id": 144,
       "type": "Fast Groups Bypasser (rgthree)",
       "pos": [
-        815.9074844757793,
-        2377.237299307881
+        779.7319172007706,
+        2378.529283853417
       ],
       "size": [
-        374.0413940064959,
-        239.3892353905003
+        393.4211621895363,
+        234.2212972083562
       ],
-      "flags": {},
+      "flags": {
+        "pinned": true
+      },
       "order": 0,
       "mode": 0,
       "inputs": [],
@@ -42,81 +44,6 @@
       }
     },
     {
-      "id": 221,
-      "type": "PreviewImage",
-      "pos": [
-        1626.5031246272222,
-        1603.3730264142457
-      ],
-      "size": [
-        359.3309734643565,
-        732.7801624241561
-      ],
-      "flags": {},
-      "order": 3,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 391
-        }
-      ],
-      "outputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "links": null
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "PreviewImage",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "input_ue_unconnectable": {},
-          "version": "7.8"
-        }
-      },
-      "widgets_values": []
-    },
-    {
-      "id": 242,
-      "type": "TextBox1",
-      "pos": [
-        774.5759065574013,
-        1611.0164000798857
-      ],
-      "size": [
-        408.2528169184998,
-        730.538230474996
-      ],
-      "flags": {},
-      "order": 1,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "text1",
-          "type": "STRING",
-          "links": [
-            390
-          ]
-        }
-      ],
-      "title": "Prompt",
-      "properties": {
-        "Node name for S&R": "TextBox1",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "input_ue_unconnectable": {},
-          "version": "7.8"
-        }
-      },
-      "widgets_values": [
-        "de4rmolly, A hyperrealistic, ultra-detailed medium-shot fashion portrait taken with an iPhone 17 Pro Max back camera (1:1 square aspect ratio). (((de4rmolly))) stands in a three-quarter leaning stance inside a luxurious private estate hallway with a minimalist background featuring white-framed windows and dark wooden furniture. Looking directly at the camera with an intense, alluring, and confident gaze, her head is subtly tilted toward her left shoulder with her chin tucked. Her long, silky dark hair has high-gloss shine and voluminous waves cascading over her left shoulder, caught in a soft backlit glow. Her pose creates a dynamic triangular frame: one arm is raised effortlessly, her hand resting on the wooden frame of an ornate birdcage, shifting her weight toward it. She has a flawless, ultra-smooth complexion with a heavy glossy and dewy finish, glowing warm peach undertones, prominent peach blush, and glossy lips under a glamorous smokey eye. She is dressed in a tailored, form-fitting sleeveless round-neck sheath midi dress in deep plum purple heavy crepe fabric that accentuates a sleek hourglass silhouette. Accessorized with a delicate gold band ring and a long gold chain with a large circular pendant resting on the center of her chest. The scene is shot with a premium editorial combination of a direct frontal flash that creates a bright, luminous glow on her face and collarbones alongside low, atmospheric backlighting that casts soft, rich shadows, producing an intricate visual mosaic of jewel tones against bright window light. Ultra-sharp focus on the subject with a cinematic warm color grading and a premium editorial fashion photography aesthetic. Use photo reference for facial features. [ControlNet: OpenPose to ensure the leaning arm's contact point with the birdcage and the head tilt are precisely captured, Depth to maintain the physical distance between the subject and the wooden structure, Canny with a tight threshold for the intricate wooden lattice of the birdcage and hair texture]"
-      ]
-    },
-    {
       "id": 243,
       "type": "ab4d8584-c656-49f8-a51a-9b1028ae2b40",
       "pos": [
@@ -127,7 +54,9 @@
         386.31021489695604,
         962.0000000000002
       ],
-      "flags": {},
+      "flags": {
+        "pinned": true
+      },
       "order": 2,
       "mode": 0,
       "inputs": [
@@ -228,6 +157,85 @@
         }
       },
       "widgets_values": []
+    },
+    {
+      "id": 221,
+      "type": "PreviewImage",
+      "pos": [
+        1598.8570223007996,
+        1612.3781937393871
+      ],
+      "size": [
+        359.3309734643565,
+        732.7801624241561
+      ],
+      "flags": {
+        "pinned": true
+      },
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 391
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PreviewImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 242,
+      "type": "TextBox1",
+      "pos": [
+        774.5759065574013,
+        1611.0164000798857
+      ],
+      "size": [
+        408.2528169184998,
+        730.538230474996
+      ],
+      "flags": {
+        "pinned": true
+      },
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "text1",
+          "type": "STRING",
+          "links": [
+            390
+          ]
+        }
+      ],
+      "title": "Prompt",
+      "properties": {
+        "Node name for S&R": "TextBox1",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "de4rmolly, A hyperrealistic, ultra-detailed full-body photograph taken with an iPhone 17 Pro Max back camera (aspect ratio 3:4).  stands elegantly on a classic European stone balcony, looking directly at the camera with a confident, warm smile and slightly tilted head. She wears a form-fitting, onyx black floral lace mermaid gown with a deep scoop neckline that creates a pronounced hourglass silhouette. Her hair is in a polished, slicked-back bun and an ornate gold clutch in her left hand. Her pose is a statuesque S-curve, hips angled 45 degrees. The background features stone pillars and a luxurious cityscape during golden hour, with soft depth of field and city bokeh. The lighting is atmospheric, casting soft shadows to emphasize the intricate 3D lace texture against the pale stone. Sharp focus on the subject. Use photo reference for facial features. [ControlNet: OpenPose for S-curve, Depth for balcony spacing]"
+      ]
     }
   ],
   "links": [
@@ -378,7 +386,7 @@
             "flags": {
               "collapsed": true
             },
-            "order": 21,
+            "order": 19,
             "mode": 0,
             "inputs": [
               {
@@ -425,7 +433,7 @@
             "flags": {
               "collapsed": true
             },
-            "order": 24,
+            "order": 21,
             "mode": 0,
             "inputs": [
               {
@@ -685,7 +693,7 @@
             "flags": {
               "collapsed": true
             },
-            "order": 25,
+            "order": 30,
             "mode": 0,
             "inputs": [
               {
@@ -1234,12 +1242,12 @@
                 {
                   "name": "A",
                   "selected": true,
-                  "url": "/api/view?filename=rgthree.compare._temp_nydjz_00013_.png&type=temp&subfolder=&rand=0.2954016482532599"
+                  "url": "/api/view?filename=rgthree.compare._temp_ulshr_00005_.png&type=temp&subfolder=&rand=0.9927543991621024"
                 },
                 {
                   "name": "B",
                   "selected": true,
-                  "url": "/api/view?filename=rgthree.compare._temp_nydjz_00014_.png&type=temp&subfolder=&rand=0.2919137975753364"
+                  "url": "/api/view?filename=rgthree.compare._temp_ulshr_00006_.png&type=temp&subfolder=&rand=0.16930067318217812"
                 }
               ]
             ]
@@ -1408,7 +1416,7 @@
             "flags": {
               "collapsed": false
             },
-            "order": 28,
+            "order": 26,
             "mode": 0,
             "inputs": [
               {
@@ -1460,7 +1468,7 @@
             "flags": {
               "pinned": true
             },
-            "order": 30,
+            "order": 27,
             "mode": 0,
             "inputs": [
               {
@@ -1493,7 +1501,7 @@
               "ver": "0.3.73"
             },
             "widgets_values": [
-              6
+              8
             ]
           },
           {
@@ -1654,7 +1662,7 @@
               1024,
               true,
               1024,
-              926912491344166,
+              351883001498664,
               "randomize",
               4,
               1.1,
@@ -1694,7 +1702,7 @@
               96.08856149999906
             ],
             "flags": {},
-            "order": 26,
+            "order": 24,
             "mode": 0,
             "inputs": [
               {
@@ -1742,7 +1750,7 @@
               206.87341751926488
             ],
             "flags": {},
-            "order": 27,
+            "order": 25,
             "mode": 0,
             "inputs": [
               {
@@ -1868,7 +1876,7 @@
               123.55857472065091
             ],
             "flags": {},
-            "order": 13,
+            "order": 12,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -1911,7 +1919,7 @@
               87.50431814035727
             ],
             "flags": {},
-            "order": 23,
+            "order": 20,
             "mode": 0,
             "inputs": [
               {
@@ -1959,7 +1967,7 @@
               "collapsed": true,
               "pinned": true
             },
-            "order": 14,
+            "order": 13,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -2005,7 +2013,7 @@
             "flags": {
               "pinned": true
             },
-            "order": 15,
+            "order": 14,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -2051,7 +2059,7 @@
             "flags": {
               "collapsed": true
             },
-            "order": 16,
+            "order": 15,
             "mode": 0,
             "inputs": [],
             "outputs": [],
@@ -2142,7 +2150,7 @@
               173.16089838315997
             ],
             "flags": {},
-            "order": 19,
+            "order": 28,
             "mode": 0,
             "inputs": [
               {
@@ -2194,7 +2202,7 @@
               151.43588809999937
             ],
             "flags": {},
-            "order": 17,
+            "order": 16,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -2341,7 +2349,7 @@
               138.15383214999918
             ],
             "flags": {},
-            "order": 18,
+            "order": 17,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -2445,7 +2453,7 @@
               "ver": "0.3.73"
             },
             "widgets_values": [
-              226864362390867,
+              168016182310809,
               "randomize",
               20,
               1,
@@ -2468,7 +2476,7 @@
             "flags": {
               "collapsed": true
             },
-            "order": 20,
+            "order": 29,
             "mode": 0,
             "inputs": [
               {
@@ -2513,7 +2521,7 @@
               101.1666011996634
             ],
             "flags": {},
-            "order": 12,
+            "order": 18,
             "mode": 0,
             "inputs": [],
             "outputs": [
@@ -2624,15 +2632,15 @@
             "id": 114,
             "type": "Power Lora Loader (rgthree)",
             "pos": [
-              103.55799992091524,
-              -106.10872910239924
+              107.44274471477937,
+              -113.32325514814687
             ],
             "size": [
               551.6971859544352,
               220.2768567534418
             ],
             "flags": {},
-            "order": 29,
+            "order": 23,
             "mode": 0,
             "inputs": [
               {
@@ -3166,10 +3174,10 @@
     "VHS_KeepIntermediate": true,
     "workflowRendererVersion": "LG",
     "ds": {
-      "scale": 0.8625086927056231,
+      "scale": 0.8390545288824032,
       "offset": [
-        672.034806882366,
-        345.8641789647188
+        -37.72459988408991,
+        -1147.2106676423464
       ]
     }
   },

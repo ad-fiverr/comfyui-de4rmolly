@@ -10,7 +10,7 @@ RUN apt-get update -qq && apt-get install -y -qq git wget && \
 
 # Custom Nodes en /ComfyUI (se copian al workspace en el primer arranque)
 RUN cd /ComfyUI/custom_nodes && \
-    rm -rf rgthree-comfy ComfyUI-Impact-Pack ComfyUI_essentials ComfyUI-GGUF ComfyUI-Impact-Subpack cg-use-everywhere ComfyMath ComfyUI-mxToolkit comfyui-crystools ComfyUI_LayerStyle ComfyUI_Fill-Nodes ComfyUI-Image-Saver ComfyUI-AdvancedLivePortrait ComfyUI-WanVideoWrapper ComfyUI-Login ComfyUI-login && \
+    rm -rf rgthree-comfy ComfyUI-Impact-Pack ComfyUI_essentials ComfyUI-GGUF ComfyUI-Impact-Subpack cg-use-everywhere ComfyMath ComfyUI-mxToolkit comfyui-crystools ComfyUI_LayerStyle ComfyUI_Fill-Nodes ComfyUI-Image-Saver ComfyUI-AdvancedLivePortrait ComfyUI-WanVideoWrapper ComfyUI-Login ComfyUI-login Vantage-Nodes && \
     git clone --depth=1 https://github.com/rgthree/rgthree-comfy && \
     git clone --depth=1 https://github.com/ltdrdata/ComfyUI-Impact-Pack && \
     git clone --depth=1 https://github.com/cubiq/ComfyUI_essentials && \
@@ -25,10 +25,11 @@ RUN cd /ComfyUI/custom_nodes && \
     git clone --depth=1 https://github.com/filliptm/ComfyUI_Fill-Nodes && \
     git clone --depth=1 https://github.com/farizrifqi/ComfyUI-Image-Saver && \
     git clone --depth=1 https://github.com/PowerHouseMan/ComfyUI-AdvancedLivePortrait && \
+    git clone --depth=1 git clone https://github.com/vantagewithai/Vantage-Nodes.git && \
     git clone --depth=1 https://github.com/kijai/ComfyUI-WanVideoWrapper.git
     
 
-RUN for dir in rgthree-comfy ComfyUI-Impact-Pack ComfyUI_essentials ComfyUI-GGUF ComfyUI-Impact-Subpack cg-use-everywhere ComfyMath ComfyUI-Custom-Scripts ComfyUI-mxToolkit comfyui-crystools ComfyUI_LayerStyle ComfyUI_Fill-Nodes ComfyUI-Image-Saver ComfyUI-AdvancedLivePortrait ComfyUI-WanVideoWrapper; do \
+RUN for dir in rgthree-comfy ComfyUI-Impact-Pack ComfyUI_essentials ComfyUI-GGUF ComfyUI-Impact-Subpack cg-use-everywhere ComfyMath ComfyUI-Custom-Scripts ComfyUI-mxToolkit comfyui-crystools ComfyUI_LayerStyle ComfyUI_Fill-Nodes ComfyUI-Image-Saver ComfyUI-AdvancedLivePortrait ComfyUI-WanVideoWrapper Vantage-Nodes; do \
       REQ="/ComfyUI/custom_nodes/${dir}/requirements.txt"; \
       if [ -f "$REQ" ]; then pip install -q -r "$REQ"; fi; \
     done
@@ -39,11 +40,11 @@ RUN rm -rf /ComfyUI/custom_nodes/ComfyUI-Login /ComfyUI/custom_nodes/ComfyUI-log
 
 
 RUN mkdir -p /ComfyUI/user/default/workflows
-COPY dearmolly_SFW_Workflow_for_Instagram.json /ComfyUI/user/default/workflows/zimage-sfw-workflow.json
-COPY krea2_de4rmolly-workflow.json /ComfyUI/user/default/workflows/Krea-nsfw-workflow.json
-COPY SkinRefiner.json /ComfyUI/user/default/workflows/zimage-refiner-workflow.json
-COPY SeedVR2_HD_Image_upscale.json /ComfyUI/user/default/workflows/zimage-upscaler-workflow.json
-
+COPY dearmolly_SFW_Workflow_for_Instagram.json /ComfyUI/user/default/workflows/Zimage-T2I-workflow.json
+COPY krea2_de4rmolly-workflow.json /ComfyUI/user/default/workflows/Krea-T2I-workflow.json
+COPY SeedVR2_HD_Image_upscale.json /ComfyUI/user/default/workflows/Zimage-upscaler-workflow.json
+COPY krea2Transferring_v10.json /ComfyUI/user/default/workflows/Krea-I2I-workflow.json
+COPY Flux2 Klein 9b Inpainting.json /ComfyUI/user/default/workflows/Klein-Inpainting-workflow.json
 
 
 RUN apt-get update -qq && apt-get install -y -qq git wget dos2unix aria2 megatools && \
