@@ -132,12 +132,15 @@ download_if_missing "https://huggingface.co/exjadev/de4rmolly-zimage-v001/resolv
     "de4rmolly_v01/de4rmolly_v01_000001500.safetensors" "$HF_TOKEN"
 download_if_missing "https://huggingface.co/exjadev/de4rmolly-zimage-v001/resolve/main/de4rmolly_v01/de4rmolly_v01_000002550.safetensors"  \
     "de4rmolly_v01/de4rmolly_v01_000002550.safetensors" "$HF_TOKEN"
+download_if_missing "https://huggingface.co/exjadev/de4rmolly-zimage-v001/resolve/main/de4rmolly_v01/de4rmolly_v01_000002250.safetensors" \
+    "de4rmolly_v01/de4rmolly_v01_000002250.safetensors" "$HF_TOKEN"
 
 # ── Krea 2 DE4RMOLLY LORA FILE ──
 download_if_missing "https://huggingface.co/exjadev/de4rmolly-krea-v001/resolve/main/de4rmolly_krea_v002/de4rmolly_krea_v002_000001500.safetensors" \
     "de4rmolly_krea_v002_000001500.safetensors" "$HF_TOKEN"
 download_if_missing "https://huggingface.co/exjadev/de4rmolly-krea-v001/resolve/main/de4rmolly_krea_v002/de4rmolly_krea_v002_000002100.safetensors" \
     "de4rmolly_krea_v002/de4rmolly_krea_v002_000002100.safetensors" "$HF_TOKEN"
+
 
 
 # Civitai filters & loras
