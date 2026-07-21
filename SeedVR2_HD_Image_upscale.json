@@ -1,8 +1,8 @@
 {
   "id": "e2c8e6ec-9e8a-4a81-a240-7e7d2befc2bf",
   "revision": 0,
-  "last_node_id": 347,
-  "last_link_id": 674,
+  "last_node_id": 349,
+  "last_link_id": 677,
   "nodes": [
     {
       "id": 64,
@@ -17,7 +17,7 @@
       ],
       "flags": {},
       "order": 107,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "name": "",
@@ -310,7 +310,7 @@
       ],
       "flags": {},
       "order": 3,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "name": "torch_compile_args",
@@ -363,7 +363,7 @@
         "collapsed": false
       },
       "order": 106,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "name": "image",
@@ -410,7 +410,7 @@
       ],
       "flags": {},
       "order": 105,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "name": "image_1",
@@ -545,7 +545,7 @@
       ],
       "flags": {},
       "order": 4,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "name": "torch_compile_args",
@@ -2357,7 +2357,7 @@
       ],
       "flags": {},
       "order": 103,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "name": "images",
@@ -2535,7 +2535,7 @@
         1024,
         true,
         1024,
-        232170470860154,
+        205637214529029,
         "randomize",
         4,
         1,
@@ -2578,7 +2578,7 @@
       ],
       "flags": {},
       "order": 108,
-      "mode": 4,
+      "mode": 0,
       "inputs": [
         {
           "name": "image",
@@ -2761,12 +2761,12 @@
           {
             "name": "A",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_polrg_00003_.png&type=temp&subfolder=&rand=0.7046548431843641"
+            "url": "/api/view?filename=rgthree.compare._temp_vdlji_00005_.png&type=temp&subfolder=&rand=0.18302178161333027"
           },
           {
             "name": "B",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_polrg_00004_.png&type=temp&subfolder=&rand=0.5405028267507731"
+            "url": "/api/view?filename=rgthree.compare._temp_vdlji_00006_.png&type=temp&subfolder=&rand=0.6098225146855942"
           }
         ]
       ]
@@ -3393,51 +3393,6 @@
       "bgcolor": "#653"
     },
     {
-      "id": 277,
-      "type": "ImageToMask",
-      "pos": [
-        -601.9850986606299,
-        934.3224266860766
-      ],
-      "size": [
-        252.95700755105054,
-        63.243997676599975
-      ],
-      "flags": {},
-      "order": 90,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 517
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": [
-            563,
-            625
-          ]
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "ImageToMask",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "input_ue_unconnectable": {},
-          "version": "7.8"
-        }
-      },
-      "widgets_values": [
-        "red"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
-    },
-    {
       "id": 291,
       "type": "ImageCompositeMasked",
       "pos": [
@@ -3496,68 +3451,6 @@
       ],
       "color": "#322",
       "bgcolor": "#533"
-    },
-    {
-      "id": 198,
-      "type": "LoraLoader",
-      "pos": [
-        -905.4410152640478,
-        410.06612878289775
-      ],
-      "size": [
-        309.1920712620414,
-        143.01317462184954
-      ],
-      "flags": {},
-      "order": 40,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "MODEL",
-          "link": 374
-        },
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 379
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MODEL",
-          "type": "MODEL",
-          "links": [
-            376,
-            619,
-            654
-          ]
-        },
-        {
-          "name": "CLIP",
-          "type": "CLIP",
-          "links": [
-            377,
-            621,
-            655
-          ]
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "LoraLoader",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "input_ue_unconnectable": {},
-          "version": "7.8"
-        }
-      },
-      "widgets_values": [
-        "de4rmolly_v01/de4rmolly_v01_000001500.safetensors",
-        0.8,
-        1
-      ],
-      "color": "#ffffff",
-      "bgcolor": "#ffffff"
     },
     {
       "id": 283,
@@ -3829,66 +3722,6 @@
       "bgcolor": "#533"
     },
     {
-      "id": 280,
-      "type": "SegmDetectorSEGS",
-      "pos": [
-        -1260.1441176821672,
-        1466.8179403512825
-      ],
-      "size": [
-        255.03105911080684,
-        224
-      ],
-      "flags": {},
-      "order": 69,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "segm_detector",
-          "type": "SEGM_DETECTOR",
-          "link": 520
-        },
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 658
-        },
-        {
-          "name": "detailer_hook",
-          "shape": 7,
-          "type": "DETAILER_HOOK",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "SEGS",
-          "type": "SEGS",
-          "links": [
-            500,
-            523
-          ]
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "SegmDetectorSEGS",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "input_ue_unconnectable": {},
-          "version": "7.8"
-        }
-      },
-      "widgets_values": [
-        0.65,
-        20,
-        2.2,
-        30,
-        "skin"
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
-    },
-    {
       "id": 259,
       "type": "ImageScaleBy",
       "pos": [
@@ -4011,7 +3844,6 @@
             515,
             519,
             583,
-            632,
             664
           ]
         }
@@ -4248,52 +4080,6 @@
       "color": "#ffffff",
       "bgcolor": "#ffffff",
       "shape": "card"
-    },
-    {
-      "id": 279,
-      "type": "ImageScaleBy",
-      "pos": [
-        -1272.2636752560816,
-        969.8461151553707
-      ],
-      "size": [
-        278.1402749386838,
-        85.25610997547346
-      ],
-      "flags": {},
-      "order": 64,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 519
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            543,
-            658
-          ]
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "ImageScaleBy",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "input_ue_unconnectable": {},
-          "version": "7.8"
-        }
-      },
-      "widgets_values": [
-        "lanczos",
-        4
-      ],
-      "color": "#432",
-      "bgcolor": "#653"
     },
     {
       "id": 217,
@@ -4651,114 +4437,6 @@
       "bgcolor": "#653"
     },
     {
-      "id": 327,
-      "type": "Image Comparer (rgthree)",
-      "pos": [
-        1867.6909379997837,
-        -411.04539703444397
-      ],
-      "size": [
-        566.4568504333937,
-        823.089476881448
-      ],
-      "flags": {},
-      "order": 109,
-      "mode": 0,
-      "inputs": [
-        {
-          "dir": 3,
-          "name": "image_a",
-          "type": "IMAGE",
-          "link": 616
-        },
-        {
-          "dir": 3,
-          "name": "image_b",
-          "type": "IMAGE",
-          "link": 617
-        }
-      ],
-      "outputs": [
-        {
-          "dir": 4,
-          "name": "images",
-          "shape": 3,
-          "type": "IMAGE",
-          "links": null
-        }
-      ],
-      "properties": {
-        "comparer_mode": "Slide",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "input_ue_unconnectable": {},
-          "version": "7.8"
-        }
-      },
-      "widgets_values": [
-        [
-          {
-            "name": "A",
-            "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_vsvsj_00003_.png&type=temp&subfolder=&rand=0.5849413574943158"
-          },
-          {
-            "name": "B",
-            "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_vsvsj_00004_.png&type=temp&subfolder=&rand=0.7547774448501066"
-          }
-        ]
-      ]
-    },
-    {
-      "id": 26,
-      "type": "LoadImage",
-      "pos": [
-        -946.0633853994902,
-        -382.24179482130825
-      ],
-      "size": [
-        359.19084127200165,
-        667.1618309776834
-      ],
-      "flags": {
-        "collapsed": false
-      },
-      "order": 21,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            418,
-            432,
-            650
-          ]
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": []
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "LoadImage",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "input_ue_unconnectable": {},
-          "version": "7.8"
-        }
-      },
-      "widgets_values": [
-        "photo_0027.png",
-        "image"
-      ],
-      "color": "#232",
-      "bgcolor": "#353"
-    },
-    {
       "id": 323,
       "type": "Reroute",
       "pos": [
@@ -4801,43 +4479,6 @@
       },
       "color": "#223",
       "bgcolor": "#335"
-    },
-    {
-      "id": 124,
-      "type": "Fast Groups Bypasser (rgthree)",
-      "pos": [
-        478.55535538488556,
-        192.26812846938188
-      ],
-      "size": [
-        419.1474975022587,
-        442
-      ],
-      "flags": {},
-      "order": 22,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "OPT_CONNECTION",
-          "type": "*",
-          "links": null
-        }
-      ],
-      "properties": {
-        "matchColors": "",
-        "matchTitle": "",
-        "showNav": true,
-        "showAllGraphs": true,
-        "sort": "position",
-        "customSortAlphabet": "",
-        "toggleRestriction": "default",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "input_ue_unconnectable": {},
-          "version": "7.8"
-        }
-      }
     },
     {
       "id": 275,
@@ -5112,146 +4753,6 @@
       "bgcolor": "#335"
     },
     {
-      "id": 321,
-      "type": "ImpactSEGSLabelFilter",
-      "pos": [
-        -1255.0203631411873,
-        4623.263937653757
-      ],
-      "size": [
-        263.6481119708993,
-        132
-      ],
-      "flags": {
-        "collapsed": false
-      },
-      "order": 77,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "segs",
-          "type": "SEGS",
-          "link": 610
-        }
-      ],
-      "outputs": [
-        {
-          "name": "filtered_SEGS",
-          "type": "SEGS",
-          "links": [
-            595
-          ]
-        },
-        {
-          "name": "remained_SEGS",
-          "type": "SEGS",
-          "links": []
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "ImpactSEGSLabelFilter",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "input_ue_unconnectable": {},
-          "version": "7.8"
-        }
-      },
-      "widgets_values": [
-        "all",
-        "all"
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
-      "id": 309,
-      "type": "SAMLoader",
-      "pos": [
-        -582.185178864056,
-        4188.226291919063
-      ],
-      "size": [
-        210,
-        74
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 23,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "SAM_MODEL",
-          "type": "SAM_MODEL",
-          "links": [
-            630
-          ]
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "SAMLoader",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "input_ue_unconnectable": {},
-          "version": "7.8"
-        }
-      },
-      "widgets_values": [
-        "sam_vit_h_4b8939.pth",
-        "Prefer GPU"
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
-      "id": 314,
-      "type": "CLIPTextEncode",
-      "pos": [
-        -630.0120834835967,
-        4035.079459667434
-      ],
-      "size": [
-        277.18392226484605,
-        167.71093162550778
-      ],
-      "flags": {
-        "collapsed": false
-      },
-      "order": 50,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "link": 582
-        }
-      ],
-      "outputs": [
-        {
-          "name": "CONDITIONING",
-          "type": "CONDITIONING",
-          "links": [
-            580,
-            599
-          ]
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "CLIPTextEncode",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "input_ue_unconnectable": {},
-          "version": "7.8"
-        }
-      },
-      "widgets_values": [
-        "de4rmolly, Extreme close-up eyes refinement of the woman, maintaining her exact features and identity. Sharp, clear eyes with defined eyelashes and limbal rings. Natural, soft lighting highlighting the perfect skin clarity. (hyperrealistic, high quality, 8k)."
-      ],
-      "color": "#223",
-      "bgcolor": "#335"
-    },
-    {
       "id": 333,
       "type": "GrowMaskWithBlur",
       "pos": [
@@ -5308,37 +4809,53 @@
       ]
     },
     {
-      "id": 316,
-      "type": "ImageScaleBy",
+      "id": 198,
+      "type": "LoraLoader",
       "pos": [
-        -1262.090504995922,
-        3977.5855408023767
+        -920.6633293993867,
+        411.8569892694082
       ],
       "size": [
-        278.1402749386838,
-        85.25610997547346
+        325.30981564063575,
+        194.94812873065337
       ],
       "flags": {},
-      "order": 65,
+      "order": 40,
       "mode": 0,
       "inputs": [
         {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 583
+          "name": "model",
+          "type": "MODEL",
+          "link": 374
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 379
         }
       ],
       "outputs": [
         {
-          "name": "IMAGE",
-          "type": "IMAGE",
+          "name": "MODEL",
+          "type": "MODEL",
           "links": [
-            665
+            376,
+            619,
+            654
+          ]
+        },
+        {
+          "name": "CLIP",
+          "type": "CLIP",
+          "links": [
+            377,
+            621,
+            655
           ]
         }
       ],
       "properties": {
-        "Node name for S&R": "ImageScaleBy",
+        "Node name for S&R": "LoraLoader",
         "ue_properties": {
           "widget_ue_connectable": {},
           "input_ue_unconnectable": {},
@@ -5346,8 +4863,50 @@
         }
       },
       "widgets_values": [
-        "lanczos",
-        4
+        "de4rmolly_v01/de4rmolly_v01_000002250.safetensors",
+        0.8,
+        1
+      ],
+      "color": "#ffffff",
+      "bgcolor": "#ffffff"
+    },
+    {
+      "id": 309,
+      "type": "SAMLoader",
+      "pos": [
+        -582.185178864056,
+        4188.226291919063
+      ],
+      "size": [
+        210,
+        74
+      ],
+      "flags": {
+        "collapsed": true
+      },
+      "order": 21,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "SAM_MODEL",
+          "type": "SAM_MODEL",
+          "links": [
+            630
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SAMLoader",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "sam_vit_h_4b8939.pth",
+        "Prefer GPU"
       ],
       "color": "#223",
       "bgcolor": "#335"
@@ -5403,19 +4962,224 @@
         }
       },
       "widgets_values": [
-        0.35,
+        0.2,
         20,
         2.2,
         10,
-        "face"
+        "face, eyes, mouth, ears"
+      ]
+    },
+    {
+      "id": 321,
+      "type": "ImpactSEGSLabelFilter",
+      "pos": [
+        -1255.0203631411873,
+        4623.263937653757
+      ],
+      "size": [
+        263.6481119708993,
+        132
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 77,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "segs",
+          "type": "SEGS",
+          "link": 610
+        }
+      ],
+      "outputs": [
+        {
+          "name": "filtered_SEGS",
+          "type": "SEGS",
+          "links": [
+            595
+          ]
+        },
+        {
+          "name": "remained_SEGS",
+          "type": "SEGS",
+          "links": []
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ImpactSEGSLabelFilter",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "all",
+        "all"
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 316,
+      "type": "ImageScaleBy",
+      "pos": [
+        -1262.090504995922,
+        3977.5855408023767
+      ],
+      "size": [
+        278.1402749386838,
+        85.25610997547346
+      ],
+      "flags": {},
+      "order": 65,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 583
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            665,
+            677
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ImageScaleBy",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "lanczos",
+        4
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 314,
+      "type": "CLIPTextEncode",
+      "pos": [
+        -624.4962331851447,
+        3977.1809401385485
+      ],
+      "size": [
+        277.18392226484605,
+        167.71093162550778
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 50,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "link": 582
+        }
+      ],
+      "outputs": [
+        {
+          "name": "CONDITIONING",
+          "type": "CONDITIONING",
+          "links": [
+            580,
+            599
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CLIPTextEncode",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "de4rmolly, Extreme close-up eyes refinement of the woman, maintaining her exact features and identity. Sharp, clear eyes with defined eyelashes and limbal rings. Natural, soft lighting highlighting the perfect skin clarity. (hyperrealistic, high quality, 8k)."
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 332,
+      "type": "SAMDetectorCombined",
+      "pos": [
+        -619.2534305601614,
+        4193.962443268943
+      ],
+      "size": [
+        268.58634264625005,
+        228.48799535319995
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 78,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "sam_model",
+          "type": "SAM_MODEL",
+          "link": 630
+        },
+        {
+          "name": "segs",
+          "type": "SEGS",
+          "link": 673
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 677
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [
+            636,
+            637
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SAMDetectorCombined",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "center-1",
+        10,
+        0.2,
+        0,
+        0.7,
+        "False"
       ]
     },
     {
       "id": 320,
       "type": "MaskPreview+",
       "pos": [
-        -622.1958923425688,
-        4264.875775084808
+        -622.1958923425682,
+        4467.243010060493
       ],
       "size": [
         271.8700050697264,
@@ -5451,78 +5215,18 @@
       "bgcolor": "#335"
     },
     {
-      "id": 332,
-      "type": "SAMDetectorCombined",
-      "pos": [
-        -605.5623021407885,
-        4244.688566549354
-      ],
-      "size": [
-        268.58634264625005,
-        228.48799535319995
-      ],
-      "flags": {
-        "collapsed": true
-      },
-      "order": 78,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "sam_model",
-          "type": "SAM_MODEL",
-          "link": 630
-        },
-        {
-          "name": "segs",
-          "type": "SEGS",
-          "link": 673
-        },
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 632
-        }
-      ],
-      "outputs": [
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": [
-            636,
-            637
-          ]
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "SAMDetectorCombined",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "input_ue_unconnectable": {},
-          "version": "7.8"
-        }
-      },
-      "widgets_values": [
-        "center-1",
-        0,
-        0.4,
-        0,
-        0.7,
-        "False"
-      ]
-    },
-    {
       "id": 324,
       "type": "ImageCompositeMasked",
       "pos": [
-        -622.69025056528,
-        4576.413878448479
+        -605.7128931531606,
+        4864.966274337483
       ],
       "size": [
-        276.44670173994814,
-        146
+        266.00546875,
+        156.83470594338814
       ],
       "flags": {
-        "collapsed": false
+        "collapsed": true
       },
       "order": 101,
       "mode": 0,
@@ -5571,11 +5275,259 @@
       "bgcolor": "#335"
     },
     {
+      "id": 124,
+      "type": "Fast Groups Bypasser (rgthree)",
+      "pos": [
+        478.55535538488556,
+        192.26812846938188
+      ],
+      "size": [
+        419.1474975022587,
+        442
+      ],
+      "flags": {},
+      "order": 22,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "properties": {
+        "matchColors": "",
+        "matchTitle": "",
+        "showNav": true,
+        "showAllGraphs": true,
+        "sort": "position",
+        "customSortAlphabet": "",
+        "toggleRestriction": "default",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      }
+    },
+    {
+      "id": 279,
+      "type": "ImageScaleBy",
+      "pos": [
+        -1264.3838891154355,
+        970.8310884229518
+      ],
+      "size": [
+        278.1402749386838,
+        85.25610997547346
+      ],
+      "flags": {},
+      "order": 64,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 519
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            543,
+            658
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ImageScaleBy",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "lanczos",
+        4
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 280,
+      "type": "SegmDetectorSEGS",
+      "pos": [
+        -1266.6991147779172,
+        1474.6839368661824
+      ],
+      "size": [
+        255.03105911080684,
+        224
+      ],
+      "flags": {},
+      "order": 69,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "segm_detector",
+          "type": "SEGM_DETECTOR",
+          "link": 520
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 658
+        },
+        {
+          "name": "detailer_hook",
+          "shape": 7,
+          "type": "DETAILER_HOOK",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "SEGS",
+          "type": "SEGS",
+          "links": [
+            500,
+            523
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "SegmDetectorSEGS",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        0.65,
+        20,
+        2.2,
+        30,
+        "skin,"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 277,
+      "type": "ImageToMask",
+      "pos": [
+        -599.3630998223299,
+        938.2554249435266
+      ],
+      "size": [
+        252.95700755105054,
+        63.243997676599975
+      ],
+      "flags": {},
+      "order": 90,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 517
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": [
+            563,
+            625
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ImageToMask",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "red"
+      ],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 327,
+      "type": "Image Comparer (rgthree)",
+      "pos": [
+        1861.4293425740386,
+        -385.68362820120217
+      ],
+      "size": [
+        566.4568504333937,
+        823.089476881448
+      ],
+      "flags": {},
+      "order": 109,
+      "mode": 0,
+      "inputs": [
+        {
+          "dir": 3,
+          "name": "image_a",
+          "type": "IMAGE",
+          "link": 616
+        },
+        {
+          "dir": 3,
+          "name": "image_b",
+          "type": "IMAGE",
+          "link": 617
+        }
+      ],
+      "outputs": [
+        {
+          "dir": 4,
+          "name": "images",
+          "shape": 3,
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "properties": {
+        "comparer_mode": "Slide",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        [
+          {
+            "name": "A",
+            "selected": true,
+            "url": "/api/view?filename=rgthree.compare._temp_nsqqp_00005_.png&type=temp&subfolder=&rand=0.39650722720231046"
+          },
+          {
+            "name": "B",
+            "selected": true,
+            "url": "/api/view?filename=rgthree.compare._temp_nsqqp_00006_.png&type=temp&subfolder=&rand=0.9677057260302775"
+          }
+        ]
+      ]
+    },
+    {
       "id": 337,
       "type": "Image Comparer (rgthree)",
       "pos": [
-        1418.4546848802397,
-        -396.05485454403845
+        1392.880185608831,
+        -387.61333387467306
       ],
       "size": [
         451.4950317953062,
@@ -5621,14 +5573,62 @@
           {
             "name": "A",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_kgrxg_00003_.png&type=temp&subfolder=&rand=0.9208452744125635"
+            "url": "/api/view?filename=rgthree.compare._temp_xpivv_00005_.png&type=temp&subfolder=&rand=0.5653178539628406"
           },
           {
             "name": "B",
             "selected": true,
-            "url": "/api/view?filename=rgthree.compare._temp_kgrxg_00004_.png&type=temp&subfolder=&rand=0.2780967664989026"
+            "url": "/api/view?filename=rgthree.compare._temp_xpivv_00006_.png&type=temp&subfolder=&rand=0.048931735674416554"
           }
         ]
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 26,
+      "type": "LoadImage",
+      "pos": [
+        -946.0633853994902,
+        -382.24179482130825
+      ],
+      "size": [
+        359.19084127200165,
+        667.1618309776834
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 23,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            418,
+            432,
+            650
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": []
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "example.png",
+        "image"
       ],
       "color": "#232",
       "bgcolor": "#353"
@@ -6668,14 +6668,6 @@
       "SAM_MODEL"
     ],
     [
-      632,
-      167,
-      0,
-      332,
-      2,
-      "IMAGE"
-    ],
-    [
       636,
       332,
       0,
@@ -6826,6 +6818,14 @@
       332,
       1,
       "SEGS"
+    ],
+    [
+      677,
+      316,
+      0,
+      332,
+      2,
+      "IMAGE"
     ]
   ],
   "groups": [
@@ -7013,10 +7013,10 @@
   "config": {},
   "extra": {
     "ds": {
-      "scale": 0.6934334949441332,
+      "scale": 0.2940834937055158,
       "offset": [
-        -763.9958771733118,
-        759.3101331106043
+        3438.3436654943553,
+        1149.080833927453
       ]
     },
     "ue_links": [],
