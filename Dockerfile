@@ -25,7 +25,7 @@ RUN cd /ComfyUI/custom_nodes && \
     git clone --depth=1 https://github.com/filliptm/ComfyUI_Fill-Nodes && \
     git clone --depth=1 https://github.com/farizrifqi/ComfyUI-Image-Saver && \
     git clone --depth=1 https://github.com/PowerHouseMan/ComfyUI-AdvancedLivePortrait && \
-    git clone --depth=1 git clone https://github.com/vantagewithai/Vantage-Nodes.git && \
+    git clone --depth=1 https://github.com/vantagewithai/Vantage-Nodes.git && \
     git clone --depth=1 https://github.com/Visionatrix/ComfyUI-Gemini.git && \
     git clone --depth=1 https://github.com/kijai/ComfyUI-WanVideoWrapper.git
     
