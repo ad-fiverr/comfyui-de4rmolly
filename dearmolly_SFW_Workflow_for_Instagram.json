@@ -2,7 +2,7 @@
   "id": "0724c4ac-5829-4fa9-bd25-57c4eb8edda6",
   "revision": 0,
   "last_node_id": 250,
-  "last_link_id": 406,
+  "last_link_id": 411,
   "nodes": [
     {
       "id": 144,
@@ -42,97 +42,18 @@
       }
     },
     {
-      "id": 250,
-      "type": "LoadImage",
-      "pos": [
-        476.5850792055271,
-        1605.0143222342317
-      ],
-      "size": [
-        282.798828125,
-        314
-      ],
-      "flags": {},
-      "order": 1,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            402
-          ]
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": null
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "LoadImage",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "input_ue_unconnectable": {},
-          "version": "7.8"
-        }
-      },
-      "widgets_values": [
-        "ComfyUI_temp_mztqa_00001_.png_202607161501 (1).jpg",
-        "image"
-      ]
-    },
-    {
-      "id": 242,
-      "type": "TextBox1",
-      "pos": [
-        774.5759065574013,
-        1611.0164000798857
-      ],
-      "size": [
-        408.2528169184998,
-        730.538230474996
-      ],
-      "flags": {},
-      "order": 2,
-      "mode": 0,
-      "inputs": [],
-      "outputs": [
-        {
-          "name": "text1",
-          "type": "STRING",
-          "links": [
-            390
-          ]
-        }
-      ],
-      "title": "Prompt",
-      "properties": {
-        "Node name for S&R": "TextBox1",
-        "ue_properties": {
-          "widget_ue_connectable": {},
-          "input_ue_unconnectable": {},
-          "version": "7.8"
-        }
-      },
-      "widgets_values": [
-        "de4rmolly, A hyperrealistic full-shot vertical seated portrait capturing a transgressive and stylized fashion editorial of a woman (utilizing (((de4rmolly))) for subject consistency), styled with an iPhone 17 Pro Max back camera aesthetic and premium editorial photography standards.\n\nSubject & Pose: The woman is seated in an ornate wooden armchair inside a moody dark academia environment, deeply absorbed in private study. Her lower body is angled toward the right, tightly crossed left-over-right, with her thighs showcasing a full contour as she sinks back into the cushions. Her torso leans back into the chair with a slight forward tilt for reading, resting against the intricate, ornate wood carvings. Her head faces forward but tilts down, lowering her downcast chin toward her chest. Her expression is solemn, serene, and focused, with a closed, neutral mouth and relaxed brows. Her eyes are fixed in a downward gaze vector, quietly focusing on the pages of an open book. Her left arm is raised to hold the book aloft at mid-chest level with a 45-degree bend at the elbow, framing her upper body while her hands maintain an active grip on the pages. Her hair is completely concealed under a snug-fitting black nun's veil featuring a crisp white headband framing her face.\n\nApparel & Styling (Provocative Monastic Aesthetic): She is wearing a tight, structured, stark white button-down blouse made of perforated lace and eyelet cotton, featuring a high ruffled collar and long sleeves buttoned at the wrists. The fabric strains significantly across her bust, putting the buttons under noticeable tension and creating volumetric compression that catches the ambient light. This is paired with a high-waisted, cinched black skirt that is hiked up high to mid-thigh, revealing a high exposure of her legs wrapped in sheer black mesh tights, establishing a stark tonal and stylistic contrast.\n\nAccessories & Makeup: She carries no external jewelry, letting the structural habit and the open book act as the central focal props. Her makeup is soft and natural, enhanced by the environmental atmosphere.\n\nEnvironment & Atmosphere: The setting is an opulent Gothic library or manor room with rich wooden floors. In the background, a large wall mirror reflects the dimly lit, vaulted room interior and the silhouette of a wooden bed header, creating an immersive, multi-layered visual depth. The overall color story sets a powerful contrast of stark blacks and whites against deep amber tones.\n\nLighting & Photography: The composition is captured from a low angle looking up at the subject to establish an intimate, dominant, and voyeuristic perspective. The scene is illuminated by low-key, high-contrast warm orange candlelight and firelight casting a localized mask-like glow on her face and creating prominent specular highlights on the lace perforations. The photo delivers a high-resolution mobile camera feel with a slight touch of natural film grain, deep shadows in the corners, an ultra-sharp focus on the subject, and a clean 9:16 vertical aspect\n"
-      ]
-    },
-    {
       "id": 221,
       "type": "PreviewImage",
       "pos": [
-        1622.5701263697722,
-        1562.732044420596
+        1626.5031246272222,
+        1603.3730264142457
       ],
       "size": [
         359.3309734643565,
         732.7801624241561
       ],
       "flags": {},
-      "order": 4,
+      "order": 3,
       "mode": 0,
       "inputs": [
         {
@@ -159,6 +80,43 @@
       "widgets_values": []
     },
     {
+      "id": 242,
+      "type": "TextBox1",
+      "pos": [
+        774.5759065574013,
+        1611.0164000798857
+      ],
+      "size": [
+        408.2528169184998,
+        730.538230474996
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "text1",
+          "type": "STRING",
+          "links": [
+            390
+          ]
+        }
+      ],
+      "title": "Prompt",
+      "properties": {
+        "Node name for S&R": "TextBox1",
+        "ue_properties": {
+          "widget_ue_connectable": {},
+          "input_ue_unconnectable": {},
+          "version": "7.8"
+        }
+      },
+      "widgets_values": [
+        "de4rmolly, A hyperrealistic, ultra-detailed medium-shot fashion portrait taken with an iPhone 17 Pro Max back camera (1:1 square aspect ratio). (((de4rmolly))) stands in a three-quarter leaning stance inside a luxurious private estate hallway with a minimalist background featuring white-framed windows and dark wooden furniture. Looking directly at the camera with an intense, alluring, and confident gaze, her head is subtly tilted toward her left shoulder with her chin tucked. Her long, silky dark hair has high-gloss shine and voluminous waves cascading over her left shoulder, caught in a soft backlit glow. Her pose creates a dynamic triangular frame: one arm is raised effortlessly, her hand resting on the wooden frame of an ornate birdcage, shifting her weight toward it. She has a flawless, ultra-smooth complexion with a heavy glossy and dewy finish, glowing warm peach undertones, prominent peach blush, and glossy lips under a glamorous smokey eye. She is dressed in a tailored, form-fitting sleeveless round-neck sheath midi dress in deep plum purple heavy crepe fabric that accentuates a sleek hourglass silhouette. Accessorized with a delicate gold band ring and a long gold chain with a large circular pendant resting on the center of her chest. The scene is shot with a premium editorial combination of a direct frontal flash that creates a bright, luminous glow on her face and collarbones alongside low, atmospheric backlighting that casts soft, rich shadows, producing an intricate visual mosaic of jewel tones against bright window light. Ultra-sharp focus on the subject with a cinematic warm color grading and a premium editorial fashion photography aesthetic. Use photo reference for facial features. [ControlNet: OpenPose to ensure the leaning arm's contact point with the birdcage and the head tilt are precisely captured, Depth to maintain the physical distance between the subject and the wooden structure, Canny with a tight threshold for the intricate wooden lattice of the birdcage and hair texture]"
+      ]
+    },
+    {
       "id": 243,
       "type": "ab4d8584-c656-49f8-a51a-9b1028ae2b40",
       "pos": [
@@ -170,7 +128,7 @@
         962.0000000000002
       ],
       "flags": {},
-      "order": 3,
+      "order": 2,
       "mode": 0,
       "inputs": [
         {
@@ -184,7 +142,7 @@
         {
           "name": "pixels",
           "type": "IMAGE",
-          "link": 402
+          "link": null
         }
       ],
       "outputs": [
@@ -288,14 +246,6 @@
       221,
       0,
       "IMAGE"
-    ],
-    [
-      402,
-      250,
-      0,
-      243,
-      1,
-      "IMAGE"
     ]
   ],
   "groups": [],
@@ -307,7 +257,7 @@
         "state": {
           "lastGroupId": 13,
           "lastNodeId": 250,
-          "lastLinkId": 406,
+          "lastLinkId": 411,
           "lastRerouteId": 1
         },
         "revision": 0,
@@ -349,9 +299,7 @@
             "id": "a2392ade-b6df-48c6-9e36-f36e48f8066c",
             "name": "pixels",
             "type": "IMAGE",
-            "linkIds": [
-              400
-            ],
+            "linkIds": [],
             "pos": [
               -1276.0247097142433,
               1600.9279817846254
@@ -462,53 +410,6 @@
             ],
             "color": "#223",
             "bgcolor": "#335"
-          },
-          {
-            "id": 164,
-            "type": "SetNode",
-            "pos": [
-              -194.12599149471112,
-              95.26140798189918
-            ],
-            "size": [
-              210,
-              58
-            ],
-            "flags": {
-              "collapsed": true
-            },
-            "order": 20,
-            "mode": 0,
-            "inputs": [
-              {
-                "name": "CLIP",
-                "type": "CLIP",
-                "link": 282
-              }
-            ],
-            "outputs": [
-              {
-                "name": "*",
-                "type": "*",
-                "links": null
-              }
-            ],
-            "title": "Set_Z-ImageTurbo_clip",
-            "properties": {
-              "Node name for S&R": "SetNode",
-              "aux_id": "kijai/ComfyUI-KJNodes",
-              "previousName": "Z-ImageTurbo_clip",
-              "ue_properties": {
-                "widget_ue_connectable": {},
-                "version": "7.5.2",
-                "input_ue_unconnectable": {}
-              }
-            },
-            "widgets_values": [
-              "Z-ImageTurbo_clip"
-            ],
-            "color": "#432",
-            "bgcolor": "#653"
           },
           {
             "id": 165,
@@ -737,7 +638,7 @@
             "flags": {
               "collapsed": true
             },
-            "order": 41,
+            "order": 40,
             "mode": 0,
             "inputs": [
               {
@@ -784,7 +685,7 @@
             "flags": {
               "collapsed": true
             },
-            "order": 26,
+            "order": 25,
             "mode": 0,
             "inputs": [
               {
@@ -831,7 +732,7 @@
             "flags": {
               "collapsed": true
             },
-            "order": 42,
+            "order": 41,
             "mode": 0,
             "inputs": [
               {
@@ -878,7 +779,7 @@
             "flags": {
               "collapsed": true
             },
-            "order": 40,
+            "order": 39,
             "mode": 0,
             "inputs": [
               {
@@ -922,7 +823,7 @@
             "flags": {
               "collapsed": true
             },
-            "order": 39,
+            "order": 38,
             "mode": 0,
             "inputs": [
               {
@@ -1000,8 +901,8 @@
               1227.895111656958
             ],
             "size": [
-              376.323828125,
-              26
+              243.9501953125,
+              10
             ],
             "flags": {
               "allow_interaction": true
@@ -1037,8 +938,8 @@
               1187.5238347168167
             ],
             "size": [
-              698.0162109375,
-              26
+              477.119140625,
+              10
             ],
             "flags": {
               "allow_interaction": true
@@ -1249,7 +1150,7 @@
             "flags": {
               "pinned": true
             },
-            "order": 36,
+            "order": 35,
             "mode": 0,
             "inputs": [
               {
@@ -1293,7 +1194,7 @@
             "flags": {
               "pinned": true
             },
-            "order": 38,
+            "order": 37,
             "mode": 0,
             "inputs": [
               {
@@ -1333,12 +1234,12 @@
                 {
                   "name": "A",
                   "selected": true,
-                  "url": "/api/view?filename=rgthree.compare._temp_bexac_00001_.png&type=temp&subfolder=&rand=0.6199231671296208"
+                  "url": "/api/view?filename=rgthree.compare._temp_nydjz_00013_.png&type=temp&subfolder=&rand=0.2954016482532599"
                 },
                 {
                   "name": "B",
                   "selected": true,
-                  "url": "/api/view?filename=rgthree.compare._temp_bexac_00002_.png&type=temp&subfolder=&rand=0.16779309133701492"
+                  "url": "/api/view?filename=rgthree.compare._temp_nydjz_00014_.png&type=temp&subfolder=&rand=0.2919137975753364"
                 }
               ]
             ]
@@ -1355,7 +1256,7 @@
               46
             ],
             "flags": {},
-            "order": 43,
+            "order": 42,
             "mode": 0,
             "inputs": [
               {
@@ -1405,7 +1306,7 @@
             "flags": {
               "collapsed": true
             },
-            "order": 45,
+            "order": 44,
             "mode": 0,
             "inputs": [
               {
@@ -1455,7 +1356,7 @@
             "flags": {
               "collapsed": true
             },
-            "order": 37,
+            "order": 36,
             "mode": 0,
             "inputs": [
               {
@@ -1507,7 +1408,7 @@
             "flags": {
               "collapsed": false
             },
-            "order": 29,
+            "order": 28,
             "mode": 0,
             "inputs": [
               {
@@ -1559,7 +1460,7 @@
             "flags": {
               "pinned": true
             },
-            "order": 31,
+            "order": 30,
             "mode": 0,
             "inputs": [
               {
@@ -1592,7 +1493,7 @@
               "ver": "0.3.73"
             },
             "widgets_values": [
-              4
+              6
             ]
           },
           {
@@ -1609,7 +1510,7 @@
             "flags": {
               "pinned": true
             },
-            "order": 35,
+            "order": 34,
             "mode": 0,
             "inputs": [
               {
@@ -1753,7 +1654,7 @@
               1024,
               true,
               1024,
-              704091476913819,
+              926912491344166,
               "randomize",
               4,
               1.1,
@@ -1793,7 +1694,7 @@
               96.08856149999906
             ],
             "flags": {},
-            "order": 27,
+            "order": 26,
             "mode": 0,
             "inputs": [
               {
@@ -1830,50 +1731,6 @@
             ]
           },
           {
-            "id": 70,
-            "type": "CLIPLoaderGGUF",
-            "pos": [
-              -246.7871127428837,
-              89.59398508820999
-            ],
-            "size": [
-              329.2326651427043,
-              101.1666011996634
-            ],
-            "flags": {},
-            "order": 12,
-            "mode": 0,
-            "inputs": [],
-            "outputs": [
-              {
-                "localized_name": "CLIP",
-                "name": "CLIP",
-                "type": "CLIP",
-                "links": [
-                  132,
-                  133,
-                  282,
-                  363
-                ]
-              }
-            ],
-            "title": "🧠 Load Text Model/CLIPLoader (GGUF)",
-            "properties": {
-              "Node name for S&R": "CLIPLoaderGGUF",
-              "ue_properties": {
-                "widget_ue_connectable": {},
-                "input_ue_unconnectable": {},
-                "version": "7.5.1"
-              },
-              "cnr_id": "comfyui-gguf",
-              "ver": "1.1.6"
-            },
-            "widgets_values": [
-              "Qwen3-4B-UD-Q8_K_XL.gguf",
-              "lumina2"
-            ]
-          },
-          {
             "id": 122,
             "type": "CLIPTextEncode",
             "pos": [
@@ -1885,7 +1742,7 @@
               206.87341751926488
             ],
             "flags": {},
-            "order": 28,
+            "order": 27,
             "mode": 0,
             "inputs": [
               {
@@ -1933,7 +1790,7 @@
               580.5494
             ],
             "flags": {},
-            "order": 44,
+            "order": 43,
             "mode": 0,
             "inputs": [
               {
@@ -1997,83 +1854,6 @@
               "dpmpp_2m_sde",
               "karras",
               0.49
-            ]
-          },
-          {
-            "id": 214,
-            "type": "Power Lora Loader (rgthree)",
-            "pos": [
-              -297.75090172382954,
-              2105.295839767768
-            ],
-            "size": [
-              448.77187766274517,
-              212.64551795286843
-            ],
-            "flags": {
-              "collapsed": false
-            },
-            "order": 22,
-            "mode": 0,
-            "inputs": [
-              {
-                "dir": 3,
-                "name": "model",
-                "type": "MODEL",
-                "link": 339
-              },
-              {
-                "dir": 3,
-                "name": "clip",
-                "type": "CLIP",
-                "link": 363
-              }
-            ],
-            "outputs": [
-              {
-                "dir": 4,
-                "name": "MODEL",
-                "shape": 3,
-                "type": "MODEL",
-                "links": [
-                  337,
-                  362
-                ]
-              },
-              {
-                "dir": 4,
-                "name": "CLIP",
-                "shape": 3,
-                "type": "CLIP",
-                "links": [
-                  334,
-                  335,
-                  336
-                ]
-              }
-            ],
-            "properties": {
-              "Show Strengths": "Single Strength",
-              "Match": "",
-              "ue_properties": {
-                "widget_ue_connectable": {},
-                "input_ue_unconnectable": {},
-                "version": "7.8"
-              }
-            },
-            "widgets_values": [
-              {},
-              {
-                "type": "PowerLoraLoaderHeaderWidget"
-              },
-              {
-                "on": true,
-                "lora": "de4rmolly_v01/de4rmolly_v01_000002550.safetensors",
-                "strength": 0.9,
-                "strengthTwo": null
-              },
-              {},
-              ""
             ]
           },
           {
@@ -2238,8 +2018,7 @@
                   283,
                   357,
                   360,
-                  377,
-                  395
+                  377
                 ]
               }
             ],
@@ -2301,14 +2080,14 @@
               578.4858085177043
             ],
             "flags": {},
-            "order": 33,
+            "order": 32,
             "mode": 0,
             "inputs": [
               {
                 "localized_name": "clip",
                 "name": "clip",
                 "type": "CLIP",
-                "link": 132
+                "link": 409
               },
               {
                 "localized_name": "text",
@@ -2370,7 +2149,7 @@
                 "localized_name": "clip",
                 "name": "clip",
                 "type": "CLIP",
-                "link": 133
+                "link": 410
               }
             ],
             "outputs": [
@@ -2460,7 +2239,7 @@
               86.74590299999898
             ],
             "flags": {},
-            "order": 34,
+            "order": 33,
             "mode": 0,
             "inputs": [
               {
@@ -2517,7 +2296,7 @@
             "flags": {
               "pinned": true
             },
-            "order": 46,
+            "order": 45,
             "mode": 0,
             "inputs": [
               {
@@ -2551,86 +2330,6 @@
             ]
           },
           {
-            "id": 247,
-            "type": "Reroute",
-            "pos": [
-              -344.031075746457,
-              527.5348645245656
-            ],
-            "size": [
-              75,
-              26
-            ],
-            "flags": {},
-            "order": 25,
-            "mode": 0,
-            "inputs": [
-              {
-                "name": "",
-                "type": "*",
-                "link": 395
-              }
-            ],
-            "outputs": [
-              {
-                "name": "",
-                "type": "VAE",
-                "links": [
-                  394
-                ]
-              }
-            ],
-            "properties": {
-              "showOutputText": false,
-              "horizontal": false,
-              "ue_properties": {
-                "widget_ue_connectable": {},
-                "version": "7.8",
-                "input_ue_unconnectable": {}
-              }
-            }
-          },
-          {
-            "id": 248,
-            "type": "Reroute",
-            "pos": [
-              -414.3868583871571,
-              862.3159818843382
-            ],
-            "size": [
-              75,
-              26
-            ],
-            "flags": {},
-            "order": 48,
-            "mode": 0,
-            "inputs": [
-              {
-                "name": "",
-                "type": "*",
-                "link": 406
-              }
-            ],
-            "outputs": [
-              {
-                "name": "",
-                "type": "LATENT",
-                "links": [
-                  398
-                ]
-              }
-            ],
-            "properties": {
-              "showOutputText": false,
-              "horizontal": false,
-              "ue_properties": {
-                "widget_ue_connectable": {},
-                "version": "7.8",
-                "input_ue_unconnectable": {}
-              }
-            }
-          },
-          {
             "id": 13,
             "type": "EmptySD3LatentImage",
             "pos": [
@@ -2651,7 +2350,9 @@
                 "name": "LATENT",
                 "type": "LATENT",
                 "slot_index": 0,
-                "links": []
+                "links": [
+                  407
+                ]
               }
             ],
             "title": "📏 Set Image Size",
@@ -2672,127 +2373,6 @@
             ]
           },
           {
-            "id": 246,
-            "type": "VAEEncode",
-            "pos": [
-              -641.1700108355104,
-              1134.2336997553202
-            ],
-            "size": [
-              140,
-              46
-            ],
-            "flags": {},
-            "order": 47,
-            "mode": 0,
-            "inputs": [
-              {
-                "localized_name": "pixels",
-                "name": "pixels",
-                "type": "IMAGE",
-                "link": 400
-              },
-              {
-                "localized_name": "vae",
-                "name": "vae",
-                "type": "VAE",
-                "link": 394
-              }
-            ],
-            "outputs": [
-              {
-                "localized_name": "LATENT",
-                "name": "LATENT",
-                "type": "LATENT",
-                "links": [
-                  406
-                ]
-              }
-            ],
-            "properties": {
-              "Node name for S&R": "VAEEncode",
-              "ue_properties": {
-                "widget_ue_connectable": {},
-                "input_ue_unconnectable": {},
-                "version": "7.8"
-              }
-            },
-            "widgets_values": []
-          },
-          {
-            "id": 114,
-            "type": "Power Lora Loader (rgthree)",
-            "pos": [
-              99.75154553063923,
-              -105.8444998813753
-            ],
-            "size": [
-              551.6971859544352,
-              220.2768567534418
-            ],
-            "flags": {},
-            "order": 30,
-            "mode": 0,
-            "inputs": [
-              {
-                "dir": 3,
-                "name": "model",
-                "type": "MODEL",
-                "link": 370
-              },
-              {
-                "dir": 3,
-                "name": "clip",
-                "type": "CLIP",
-                "link": null
-              }
-            ],
-            "outputs": [
-              {
-                "dir": 4,
-                "name": "MODEL",
-                "shape": 3,
-                "type": "MODEL",
-                "links": [
-                  214
-                ]
-              },
-              {
-                "dir": 4,
-                "name": "CLIP",
-                "shape": 3,
-                "type": "CLIP",
-                "links": []
-              }
-            ],
-            "title": "🎨 Load LoRA Styles",
-            "properties": {
-              "Show Strengths": "Single Strength",
-              "Match": "",
-              "ue_properties": {
-                "widget_ue_connectable": {},
-                "input_ue_unconnectable": {},
-                "version": "7.5.1"
-              },
-              "cnr_id": "rgthree-comfy",
-              "ver": "1.0.2511111955"
-            },
-            "widgets_values": [
-              {},
-              {
-                "type": "PowerLoraLoaderHeaderWidget"
-              },
-              {
-                "on": true,
-                "lora": "de4rmolly_v01/de4rmolly_v01_000001500.safetensors",
-                "strength": 1,
-                "strengthTwo": null
-              },
-              {},
-              ""
-            ]
-          },
-          {
             "id": 3,
             "type": "KSampler",
             "pos": [
@@ -2804,7 +2384,7 @@
               486
             ],
             "flags": {},
-            "order": 32,
+            "order": 31,
             "mode": 0,
             "inputs": [
               {
@@ -2829,7 +2409,7 @@
                 "localized_name": "latent_image",
                 "name": "latent_image",
                 "type": "LATENT",
-                "link": 398
+                "link": 407
               },
               {
                 "localized_name": "seed",
@@ -2865,13 +2445,256 @@
               "ver": "0.3.73"
             },
             "widgets_values": [
-              978521817692743,
+              226864362390867,
               "randomize",
-              30,
+              20,
               1,
               "dpmpp_3m_sde_gpu",
               "karras",
-              0.49
+              1
+            ]
+          },
+          {
+            "id": 164,
+            "type": "SetNode",
+            "pos": [
+              -194.12599149471112,
+              95.26140798189918
+            ],
+            "size": [
+              210,
+              58
+            ],
+            "flags": {
+              "collapsed": true
+            },
+            "order": 20,
+            "mode": 0,
+            "inputs": [
+              {
+                "name": "CLIP",
+                "type": "CLIP",
+                "link": 411
+              }
+            ],
+            "outputs": [
+              {
+                "name": "CLIP",
+                "type": "CLIP",
+                "links": null
+              }
+            ],
+            "title": "Set_Z-ImageTurbo_clip",
+            "properties": {
+              "Node name for S&R": "SetNode",
+              "aux_id": "kijai/ComfyUI-KJNodes",
+              "previousName": "Z-ImageTurbo_clip",
+              "ue_properties": {
+                "widget_ue_connectable": {},
+                "version": "7.5.2",
+                "input_ue_unconnectable": {}
+              }
+            },
+            "widgets_values": [
+              "Z-ImageTurbo_clip"
+            ],
+            "color": "#432",
+            "bgcolor": "#653"
+          },
+          {
+            "id": 70,
+            "type": "CLIPLoaderGGUF",
+            "pos": [
+              -241.45383316100472,
+              84.1795469039987
+            ],
+            "size": [
+              329.2326651427043,
+              101.1666011996634
+            ],
+            "flags": {},
+            "order": 12,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [
+              {
+                "localized_name": "CLIP",
+                "name": "CLIP",
+                "type": "CLIP",
+                "links": [
+                  363,
+                  408
+                ]
+              }
+            ],
+            "title": "🧠 Load Text Model/CLIPLoader (GGUF)",
+            "properties": {
+              "Node name for S&R": "CLIPLoaderGGUF",
+              "ue_properties": {
+                "widget_ue_connectable": {},
+                "input_ue_unconnectable": {},
+                "version": "7.5.1"
+              },
+              "cnr_id": "comfyui-gguf",
+              "ver": "1.1.6"
+            },
+            "widgets_values": [
+              "Qwen3-4B-UD-Q8_K_XL.gguf",
+              "lumina2"
+            ]
+          },
+          {
+            "id": 214,
+            "type": "Power Lora Loader (rgthree)",
+            "pos": [
+              -269.9250952096783,
+              2101.8176139534985
+            ],
+            "size": [
+              448.77187766274517,
+              212.64551795286843
+            ],
+            "flags": {
+              "collapsed": false
+            },
+            "order": 22,
+            "mode": 0,
+            "inputs": [
+              {
+                "dir": 3,
+                "name": "model",
+                "type": "MODEL",
+                "link": 339
+              },
+              {
+                "dir": 3,
+                "name": "clip",
+                "type": "CLIP",
+                "link": 363
+              }
+            ],
+            "outputs": [
+              {
+                "dir": 4,
+                "name": "MODEL",
+                "shape": 3,
+                "type": "MODEL",
+                "links": [
+                  337,
+                  362
+                ]
+              },
+              {
+                "dir": 4,
+                "name": "CLIP",
+                "shape": 3,
+                "type": "CLIP",
+                "links": [
+                  334,
+                  335,
+                  336
+                ]
+              }
+            ],
+            "properties": {
+              "Show Strengths": "Single Strength",
+              "Match": "",
+              "ue_properties": {
+                "widget_ue_connectable": {},
+                "input_ue_unconnectable": {},
+                "version": "7.8"
+              }
+            },
+            "widgets_values": [
+              {},
+              {
+                "type": "PowerLoraLoaderHeaderWidget"
+              },
+              {
+                "on": true,
+                "lora": "de4rmolly_v01/de4rmolly_v01_000002550.safetensors",
+                "strength": 0.9,
+                "strengthTwo": null
+              },
+              {},
+              ""
+            ]
+          },
+          {
+            "id": 114,
+            "type": "Power Lora Loader (rgthree)",
+            "pos": [
+              103.55799992091524,
+              -106.10872910239924
+            ],
+            "size": [
+              551.6971859544352,
+              220.2768567534418
+            ],
+            "flags": {},
+            "order": 29,
+            "mode": 0,
+            "inputs": [
+              {
+                "dir": 3,
+                "name": "model",
+                "type": "MODEL",
+                "link": 370
+              },
+              {
+                "dir": 3,
+                "name": "clip",
+                "type": "CLIP",
+                "link": 408
+              }
+            ],
+            "outputs": [
+              {
+                "dir": 4,
+                "name": "MODEL",
+                "shape": 3,
+                "type": "MODEL",
+                "links": [
+                  214
+                ]
+              },
+              {
+                "dir": 4,
+                "name": "CLIP",
+                "shape": 3,
+                "type": "CLIP",
+                "links": [
+                  409,
+                  410,
+                  411
+                ]
+              }
+            ],
+            "title": "🎨 Load LoRA Styles",
+            "properties": {
+              "Show Strengths": "Single Strength",
+              "Match": "",
+              "ue_properties": {
+                "widget_ue_connectable": {},
+                "input_ue_unconnectable": {},
+                "version": "7.5.1"
+              },
+              "cnr_id": "rgthree-comfy",
+              "ver": "1.0.2511111955"
+            },
+            "widgets_values": [
+              {},
+              {
+                "type": "PowerLoraLoaderHeaderWidget"
+              },
+              {
+                "on": true,
+                "lora": "de4rmolly_v01/de4rmolly_v01_000001500.safetensors",
+                "strength": 0.8,
+                "strengthTwo": null
+              },
+              {},
+              ""
             ]
           }
         ],
@@ -2923,14 +2746,6 @@
             "target_id": 163,
             "target_slot": 0,
             "type": "MODEL"
-          },
-          {
-            "id": 282,
-            "origin_id": 70,
-            "origin_slot": 0,
-            "target_id": 164,
-            "target_slot": 0,
-            "type": "CLIP"
           },
           {
             "id": 283,
@@ -3269,22 +3084,6 @@
             "type": "INT"
           },
           {
-            "id": 132,
-            "origin_id": 70,
-            "origin_slot": 0,
-            "target_id": 6,
-            "target_slot": 0,
-            "type": "CLIP"
-          },
-          {
-            "id": 133,
-            "origin_id": 70,
-            "origin_slot": 0,
-            "target_id": 7,
-            "target_slot": 0,
-            "type": "CLIP"
-          },
-          {
             "id": 389,
             "origin_id": -10,
             "origin_slot": 0,
@@ -3309,44 +3108,44 @@
             "type": "IMAGE"
           },
           {
-            "id": 394,
-            "origin_id": 247,
-            "origin_slot": 0,
-            "target_id": 246,
-            "target_slot": 1,
-            "type": "VAE"
-          },
-          {
-            "id": 395,
-            "origin_id": 17,
-            "origin_slot": 0,
-            "target_id": 247,
-            "target_slot": 0,
-            "type": "VAE"
-          },
-          {
-            "id": 398,
-            "origin_id": 248,
+            "id": 407,
+            "origin_id": 13,
             "origin_slot": 0,
             "target_id": 3,
             "target_slot": 3,
             "type": "LATENT"
           },
           {
-            "id": 400,
-            "origin_id": -10,
-            "origin_slot": 1,
-            "target_id": 246,
-            "target_slot": 0,
-            "type": "IMAGE"
+            "id": 408,
+            "origin_id": 70,
+            "origin_slot": 0,
+            "target_id": 114,
+            "target_slot": 1,
+            "type": "CLIP"
           },
           {
-            "id": 406,
-            "origin_id": 246,
-            "origin_slot": 0,
-            "target_id": 248,
+            "id": 409,
+            "origin_id": 114,
+            "origin_slot": 1,
+            "target_id": 6,
             "target_slot": 0,
-            "type": "LATENT"
+            "type": "CLIP"
+          },
+          {
+            "id": 410,
+            "origin_id": 114,
+            "origin_slot": 1,
+            "target_id": 7,
+            "target_slot": 0,
+            "type": "CLIP"
+          },
+          {
+            "id": 411,
+            "origin_id": 114,
+            "origin_slot": 1,
+            "target_id": 164,
+            "target_slot": 0,
+            "type": "CLIP"
           }
         ],
         "extra": {
@@ -3367,10 +3166,10 @@
     "VHS_KeepIntermediate": true,
     "workflowRendererVersion": "LG",
     "ds": {
-      "scale": 0.6303940863128499,
+      "scale": 0.8625086927056231,
       "offset": [
-        -209.96918055851614,
-        -1236.3248722021674
+        672.034806882366,
+        345.8641789647188
       ]
     }
   },
